@@ -42,6 +42,8 @@
       on:keyup={handleKeyUp}
     />
   {:else}
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <p
       on:click={() => (canUpdate = !canUpdate)}
       class={task.done ? "completed" : ""}

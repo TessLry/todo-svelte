@@ -1,7 +1,6 @@
 <script>
   import ListTasks from "./components/ListTasks.svelte";
   import AddTask from "./components/AddTask.svelte";
-  import AddTask2 from "./components/AddTask2.svelte";
 
   let allTasks = localStorage.getItem("todos")
     ? JSON.parse(localStorage.getItem("todos"))
@@ -18,8 +17,7 @@
 </div>
 
 <section>
-  <!-- <AddTask bind:allTasks /> -->
-  <AddTask2 bind:allTasks />
+  <AddTask bind:allTasks />
   <ListTasks bind:allTasks />
 </section>
 

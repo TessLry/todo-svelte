@@ -36,6 +36,11 @@
   .all-tasks {
     width: 30%;
   }
+  @media (max-width: 768px) {
+    .all-tasks {
+      width: 90%;
+    }
+  }
 
   h2 {
     color: white;

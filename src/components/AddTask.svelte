@@ -17,34 +17,22 @@
 </script>
 
 <div class="add-zone">
-  <span>
-    <input placeholder="Add a task..." bind:value on:keyup={handleKeyUp} />
-    {#if value}
-      <button on:click={addTask}>
-        <i class="fa-solid fa-square-plus" />
-      </button>
-    {/if}
-  </span>
+  <input placeholder="Add a task..." bind:value on:keyup={handleKeyUp} />
+  <button on:click={addTask}> Add </button>
 </div>
 
 <style>
   .add-zone {
     margin: 2rem;
-  }
-
-  span {
     display: flex;
-    border: 2px solid var(--pink);
-    border-radius: 0.5rem;
   }
 
   input {
     flex: 1;
-    border: none;
+    border: 2px solid var(--dark-pink);
+    border-radius: 0.5rem 0 0 0.5rem;
     font-size: 1.5rem;
     padding: 0.5rem;
-    padding-right: 1rem;
-    background: transparent;
   }
   input:focus {
     outline: none;
@@ -52,12 +40,11 @@
 
   button {
     border: none;
-    background-color: transparent;
-  }
-
-  i {
-    color: var(--dark-pink);
-    font-size: 2.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: var(--dark-pink);
+    color: white;
+    font-size: 1.5rem;
     cursor: pointer;
+    padding: 0.5rem;
   }
 </style>
