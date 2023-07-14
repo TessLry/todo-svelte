@@ -12,7 +12,7 @@
 </script>
 
 <div class="title">
-  <h1>TO DO List</h1>
+  <h1>To Do List</h1>
   <i class="fa-solid fa-list-check" />
 </div>
 
